@@ -18,5 +18,11 @@ public class AccountDetailsController {
 		
 		
 	}
+	@PostMapping("/savedetails1")
+	public void customerDetails1(@RequestBody AccountDetailsPojo accountDetailsPojo) {
+		accountDetailsService.customerDetails(accountDetailsPojo);
+		
+		
+	}
 
 }
